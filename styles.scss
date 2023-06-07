@@ -9,8 +9,10 @@ $heading-font-weight: 500;
 $text-font: "Playfair Display", serif;
 $text-font-weight: 400;
 
+// Import Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
 
+/* Body styles */
 body {
   margin: 0;
   padding: 0;
@@ -19,6 +21,7 @@ body {
   color: $primary-color;
 }
 
+/* Heading styles */
 h1,
 h2,
 h3 {
@@ -27,29 +30,34 @@ h3 {
   color: $primary-color;
 }
 
+/* Paragraph styles */
 p {
   font-size: 1rem;
   font-family: $text-font;
   font-weight: $text-font-weight;
 }
 
+/* Anchor (link) styles */
 a {
   font-size: 1rem;
   text-decoration: none;
   color: $primary-color;
 }
 
+/* Container styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Header styles */
 header {
   display: flex;
   justify-content: center;
   background-color: $primary-color;
 
+  /* Menu styles */
   .menu {
     list-style-type: none;
     margin: 0;
@@ -58,14 +66,17 @@ header {
     display: flex;
     align-items: center;
 
+    /* Menu item styles */
     li {
       display: inline-block;
       margin-left: 20px;
 
+      /* Logo styles */
       .logo {
         width: 100px;
       }
 
+      /* Anchor styles */
       a {
         display: block;
         padding: 10px;
@@ -77,6 +88,7 @@ header {
         }
       }
 
+      /* Active menu item styles */
       &.active {
         color: grey;
       }
@@ -84,7 +96,9 @@ header {
   }
 }
 
+/* Main content styles */
 main {
+  /* Line separator styles */
   .line {
     width: 100%;
     height: 2px;
@@ -93,18 +107,22 @@ main {
     margin: 15px 0;
   }
 
+  /* Specials section styles */
   .specials-section {
     margin-top: 20px;
     padding: 0 20px;
 
+    /* Specials list styles */
     .specials {
       text-align: center;
 
+      /* Unordered list styles */
       ul {
         list-style-type: disc;
         padding-left: 20px;
         text-align: left;
 
+        /* List item styles */
         li {
           margin-bottom: 10px;
         }
@@ -112,16 +130,19 @@ main {
     }
   }
 
+  /* Slideshow container styles */
   .slideshow-container {
     width: 100%;
     position: relative;
     margin: 0;
     overflow: hidden;
 
+    /* Slides styles */
     .mySlides {
       display: none;
     }
 
+    /* Previous and Next buttons styles */
     .prev,
     .next {
       cursor: pointer;
@@ -137,6 +158,7 @@ main {
       border-radius: 0 3px 3px 0;
       user-select: none;
 
+      /* Next button styles */
       &.next {
         right: 0;
         border-radius: 3px 0 0 3px;
@@ -147,12 +169,14 @@ main {
       }
     }
 
+    /* Number text styles */
     .numbertext {
       color: #3f3f3f;
       font-size: 22px;
       position: absolute;
     }
 
+    /* Dot styles */
     .dot {
       cursor: pointer;
       height: 15px;
@@ -163,12 +187,14 @@ main {
       display: inline-block;
       transition: background-color 0.6s ease;
 
+      /* Active dot styles */
       &.active,
       &:hover {
         background-color: #717171;
       }
     }
 
+    /* Fade animation styles */
     .fade {
       animation-name: fade;
       animation-duration: 1.5s;
@@ -184,15 +210,18 @@ main {
     }
   }
 
+  /* Content wrapper styles */
   .content-wrapper {
     display: flex;
 
+    /* Text container and image container styles */
     .text-container,
     .image-container {
       flex: 1;
       text-align: left;
       margin: 0 5%;
 
+      /* Image container styles */
       &.image-container {
         text-align: right;
 
@@ -205,10 +234,12 @@ main {
     }
   }
 
+  /* About section styles */
   .about {
     padding: 0 5%;
   }
 
+  /* Menu section styles */
   .menu {
     text-align: center;
 
@@ -216,11 +247,13 @@ main {
       margin-bottom: 20px;
     }
 
+    /* Menu items styles */
     .menu-items {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
 
+      /* Menu item styles */
       .menu-item {
         width: 320px;
         margin: 10px;
@@ -242,16 +275,19 @@ main {
   }
 }
 
+/* Footer styles */
 footer {
   background-color: $secondary-color;
   color: #fff;
   padding: 20px;
 
+  /* Footer content styles */
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
+    /* Social media styles */
     .social-media {
       ul {
         list-style-type: none;
@@ -274,6 +310,7 @@ footer {
       }
     }
 
+    /* Newsletter styles */
     .newsletter {
       input[type="email"] {
         width: 200px;
@@ -297,10 +334,15 @@ footer {
   }
 }
 
+/* Media queries for responsive design */
+
+/* Media query for screens up to 480px wide */
 @media (max-width: 480px) {
+  /* Header styles */
   header {
     overflow-x: hidden;
 
+    /* Menu styles */
     .menu {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -308,11 +350,13 @@ footer {
       justify-content: center;
       grid-gap: 0;
 
+      /* Logo container styles */
       .logo-container {
         grid-column: 2 / span 1;
         grid-row: 1 / span 3;
       }
 
+      /* Menu item styles */
       li:nth-child(1) {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -334,29 +378,40 @@ footer {
       }
     }
   }
+
+  /* Main section styles */
   main {
+    /* Line styles */
     .line {
       margin: 5px 0;
     }
+
+    /* Slideshow container styles */
     .slideshow-container {
+      /* Previous and Next button styles */
       .prev,
       .next {
         padding: 8px;
         font-size: 14px;
       }
+
+      /* Number text styles */
       .numbertext {
         font-size: 15px;
       }
     }
 
+    /* Content wrapper styles */
     .content-wrapper {
       flex-direction: column-reverse;
 
+      /* Text container and image container styles */
       .text-container,
       .image-container {
         margin: 0;
       }
 
+      /* Text container styles */
       .text-container {
         padding-top: 20px;
         margin-left: 10px;
@@ -364,40 +419,52 @@ footer {
         text-align: center;
       }
 
+      /* Image container styles */
       .image-container {
         margin-right: 20%;
       }
     }
 
+    /* Menu styles */
     .menu {
+      /* Menu items styles */
       .menu-items {
+        /* Menu item styles */
         .menu-item {
           width: 100%;
         }
       }
     }
+
+    /* About section styles */
     .about {
       text-align: center;
     }
   }
 
+  /* Footer styles */
   footer {
+    /* Footer content styles */
     .footer-content {
       flex-direction: column;
       text-align: center;
 
+      /* Social media styles */
       .social-media {
         margin-left: auto;
         margin-right: auto;
+
         ul {
           text-align: center;
           margin-bottom: 10px;
         }
       }
 
+      /* Newsletter styles */
       .newsletter {
         margin-left: auto;
         margin-right: auto;
+
         input[type="email"] {
           width: auto;
           margin-bottom: 10px;
@@ -411,12 +478,98 @@ footer {
   }
 }
 
+/* Media query for screens between 481px and 1024px wide */
 @media (min-width: 481px) and (max-width: 1024px) {
-  .main {
+  /* Header styles */
+  header {
+    /* Menu styles */
+    .menu {
+      justify-content: space-between;
+
+      /* Menu item styles */
+      li {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  /* Main section styles */
+  main {
+    /* Content wrapper styles */
     .content-wrapper {
+      flex-direction: column;
+
+      /* Text container and image container styles */
+      .text-container,
       .image-container {
-        img {
-          width: 400px;
+        margin: 0;
+      }
+
+      /* Text container styles */
+      .text-container {
+        padding-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+
+      /* Image container styles */
+      .image-container {
+        margin-right: 20%;
+      }
+    }
+
+    /* Menu styles */
+    .menu {
+      /* Menu items styles */
+      .menu-items {
+        justify-content: center;
+
+        /* Menu item styles */
+        .menu-item {
+          width: 320px;
+          margin: 10px;
+        }
+      }
+    }
+
+    /* About section styles */
+    .about {
+      text-align: center;
+    }
+  }
+
+  /* Footer styles */
+  footer {
+    /* Footer content styles */
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+
+      /* Social media styles */
+      .social-media {
+        margin-left: auto;
+        margin-right: auto;
+
+        ul {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      }
+
+      /* Newsletter styles */
+      .newsletter {
+        margin-left: auto;
+        margin-right: auto;
+
+        input[type="email"] {
+          width: auto;
+          margin-bottom: 10px;
+        }
+
+        button {
+          width: 50%;
         }
       }
     }
