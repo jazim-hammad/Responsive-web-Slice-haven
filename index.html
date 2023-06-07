@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slice Haven - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="./assets/Slice Haven - transparent.png"
+      type="image/png"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/87ef2ec61d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li>
+            <img
+              src="/assets/Slice Haven - transparent.png"
+              alt="Logo"
+              class="logo"
+            />
+          </li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="menu.html">Specials</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/assets/slideshow-1.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/assets/slideshow-2.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/assets/slideshow-3.png" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <div class="line"></div>
+
+      <section>
+        <div class="content-wrapper">
+          <div class="text-container">
+            <h1>Welcome to Slice Haven!</h1>
+            <p>
+              Here pizza dreams come true. Our passion for crafting the finest
+              pizzas is evident in every slice we serve. From the crispy crust
+              to the delectable toppings and melty cheese, our creations are a
+              celebration of flavor. Whether you're craving a classic Margherita
+              or an adventurous combination, our diverse menu and commitment to
+              quality ensure an unforgettable pizza experience. Join us at Slice
+              Haven and embark on a culinary journey filled with deliciousness
+              and satisfaction.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="/assets/Display-1.png" alt="Delicious pizza" />
+          </div>
+        </div>
+      </section>
+
+      <div class="line"></div>
+      <section id="About">
+        <div class="about">
+          <h2>About Us</h2>
+          <p>
+            Slice Haven, founded in 2023 by Jazim Hammad Khan, is a haven for
+            pizza lovers seeking exceptional flavors and a memorable dining
+            experience. With a commitment to quality and a passion for crafting
+            mouthwatering pizzas, Slice Haven has quickly become a go-to
+            destination for pizza enthusiasts, offering a delightful culinary
+            journey that satisfies every craving.
+          </p>
+        </div>
+      </section>
+      <div class="line"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-media">
+          <h3>Connect with us</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Subscribe to our newsletter</h3>
+          <form>
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-text">© 2023 Slice Haven. All rights reserved.</p>
+    </footer>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Slice-Haven"
+      chat-icon="https://drive.google.com/file/d/1vISgsu-VmUgoPvQ7ee39h-9tUkATMRK7/view?usp=sharing"
+      agent-id="9333ce5f-b4f3-4610-be04-bfab967cf4a6"
+      language-code="en"
+    ></df-messenger>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slice Haven - Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="./assets/Slice Haven - transparent.png"
+      type="image/png"
+    />
+    <script
+      src="https://kit.fontawesome.com/87ef2ec61d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li>
+          <img
+            src="/assets/Slice Haven - transparent.png"
+            alt="Logo"
+            class="logo"
+          />
+        </li>
+        <li class="active"><a href="menu.html">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/assets/slideshow-1.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/assets/slideshow-2.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/assets/slideshow-3.png" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <div class="line"></div>
+
+      <section>
+        <div class="menu">
+          <h1>Our Pizza Menu</h1>
+          <div class="menu-items">
+            <div class="menu-item">
+              <h3>Margherita</h3>
+              <p>Tomato sauce, mozzarella cheese, and fresh basil.</p>
+            </div>
+            <div class="menu-item">
+              <h3>Pepperoni</h3>
+              <p>Tomato sauce, mozzarella cheese, and pepperoni slices.</p>
+            </div>
+            <div class="menu-item">
+              <h3>Hawaiian</h3>
+              <p>Tomato sauce, mozzarella cheese, ham, and pineapple.</p>
+            </div>
+            <div class="menu-item">
+              <h3>Vegetarian</h3>
+              <p>
+                Tomato sauce, mozzarella cheese, bell peppers, onions,
+                mushrooms, and olives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+      <section id="specials" class="specials-section">
+        <div class="specials">
+          <h2>Specials</h2>
+          <p>Check out our daily specials and promotions!</p>
+          <ul>
+            <li>Monday:Family combo - pizza, garlic bread, and drinks.</li>
+            <li>Tuesday: 50% off on all vegetarian pizzas.</li>
+            <li>Wednesday: Free dessert with any pizza order.</li>
+            <li>Thursday: Buy one pizza, get one free.</li>
+            <li>Friday: Pizza party pack - perfect for group orders.</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="line"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-media">
+          <h3>Connect with us</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Subscribe to our newsletter</h3>
+          <form>
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <p class="footer-text">© 2023 Slice Haven. All rights reserved.</p>
+    </footer>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Slice-Haven"
+      chat-icon="https://drive.google.com/file/d/1vISgsu-VmUgoPvQ7ee39h-9tUkATMRK7/view?usp=sharing"
+      agent-id="9333ce5f-b4f3-4610-be04-bfab967cf4a6"
+      language-code="en"
+    ></df-messenger>
+    <script src="script.js"></script>
+  </body>
+</html>
